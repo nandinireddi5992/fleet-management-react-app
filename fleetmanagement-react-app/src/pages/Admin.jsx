@@ -51,7 +51,7 @@ function Admin() {
   }, []);
 
   const deleteFleet = useCallback((id) => {
-    if (confirm("Are you sure?")) {
+    if (confirm("Are you sure ?")) {
       setFleets((prev) => prev.filter((f) => f.id !== id));
     }
   }, []);
